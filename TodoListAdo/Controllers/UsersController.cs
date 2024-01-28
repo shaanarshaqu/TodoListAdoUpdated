@@ -31,7 +31,7 @@ namespace TodoListAdo.Controllers
         [Authorize(Roles ="admin")]
         public IActionResult Get()
         {
-            int a = 0;
+            int a = 10;
             return Ok(_usersData.DisplayUsers());
         }
 

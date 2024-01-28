@@ -36,7 +36,7 @@ namespace TodoListAdo.Controllers
         }
 
 
-        [HttpPut("{id:int}")]
+        [HttpPut("Update/{id:int}")]
         [Authorize]
         public IActionResult UpdateTodo(int id,[FromBody] inputTodoDTO todo)
         {
